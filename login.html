@@ -9,12 +9,14 @@
 <body>
     <h1 style="text-align: center;">Webbord Kakkak</h1>
     <hr>
-    <table style="border: 2px solid black; width:40%" align="center">
-    <tr><td colspan="2" style="background-color: aqua;">เข้าสู่ระบบ<td></tr>
-    <tr><td>login</td><td><input type="text" name="login"></td></tr>
-    <tr><td>password</td><td><input type="text" name="pwd"></td></tr>
-    <tr><td colspan="2" align="center"><input type="submit" value="login"></td></tr>
+   <form action="verify.php" method="post">
+        <table style="border: 2px solid black; width:40%" align="center">
+         <tr><td colspan="2" style="background-color: aqua;">เข้าสู่ระบบ<td></tr>
+         <tr><td>login</td><td><input type="text" name="login"></td></tr>
+         <tr><td>password</td><td><input type="text" name="pwd"></td></tr>
+         <tr><td colspan="2" align="center"><input type="submit" value="login"></td></tr>
 </table>
+</form>
 <br>
 <div align="center">
     ถ้ายังไม่ได้เป็นสมาชิก <a href="register.html">กรุณาสมัครสมาชิก</a>
