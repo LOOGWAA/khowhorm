@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>post</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1 align="center">Webboard KIKI</h1>
+<h1 align="center">Webboard KUKU</h1>
     <hr>
     <div align="center">
-        ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]; ?><br><br>
-        <table style="width: 10%;  border: 2px solid black;">
-        <tr><td style="background-color: #FF6699;">แสดงความคิดเห็น</td></tr>
-        <tr><td><textarea rows="4" cols="35"></textarea></td></tr>
-        <tr><td align="center"><input type="submit" name="submit" value="ส่งข้อความ"></td></tr>
-        </table><br>
-        <a href="index.html">กลับไปหน้าหลัก</a>
-    </div>
+        ตองการดูกระทู้หมายเลข <?php echo $_GET["id"];?>
+        <br>
+        <?php
+        $n = $_GET["id"];
+        if (($n % 2) == 0)
+        echo "เป็นกระทู้หมายเลขคู่";
+        else
+        echo "เป็นกระทู้หมายเลขคี่";
+        ?>
+        <br>
+        <table style="width: 20%; border: 1px solid black">
+  <tr><td style="background-color: #D6EEEE">แสดงความคิดเห็น</td></tr>
+  <tr><td><textarea></textarea></td></tr>
+  <tr><td colspan="2" align="center"><input type="submit" name="text" value="ส่งข้อความ"></td></tr>
+</table>
+<a href="index.php">กลับไปหน้าหลัก</a>
+</div>
 </body>
 </html>
